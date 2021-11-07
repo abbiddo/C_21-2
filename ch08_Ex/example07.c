@@ -8,7 +8,6 @@
 #include <stdio.h>
 int main(){
 	double ary[]={1.5, 20.1, 16.4, 2.3, 3.5};
-	double sum=0.0;
 	int i,cnt=sizeof(ary)/sizeof(ary[0]);
 	
 	for (i=cnt-1;i>=0;i--)
