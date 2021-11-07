@@ -1,8 +1,8 @@
 /**
-ÇÁ·Î±×·¥¸í : practice02.c
-¼³¸í : ¹è¿­ÀÇ Æò±ÕÀ» ±¸ÇÏ´Â µÎ ÇÔ¼ö ÀÛ¼ºÇÏ±â (¹è¿­±âÈ£ / Æ÷ÀÎÅÍ »ê¼ú ¿¬»ê) 
-ÀÛ¼ºÀÏ½Ã : 2021.11.07
-ÀÛ¼ºÀÚ : Á¤¼Ò¿µ
+í”„ë¡œê·¸ëž¨ëª… : practice02.c
+ì„¤ëª… : ë°°ì—´ì˜ í‰ê· ì„ êµ¬í•˜ëŠ” ë‘ í•¨ìˆ˜ ìž‘ì„±í•˜ê¸° (ë°°ì—´ ê¸°í˜¸ / í¬ì¸í„° ì‚°ìˆ  ì—°ì‚°) 
+ìž‘ì„±ì¼ì‹œ : 2021.11.07
+ìž‘ì„±ìž : ì •ì†Œì˜
 **/
 
 #include <stdio.h> 
@@ -21,9 +21,9 @@ double average_by_array(int p[], int length){
 	double sum=0.0;
 	
 	for (i=0; i < length; i++)
-		sum+=p[i];                                  // ¹è¿­ ±âÈ£¸¦ ÀÌ¿ëÇØ ¹è¿­ÀÇ ¿ä¼Ò¿¡ Á¢±Ù 
+		sum+=p[i];                                  // ë°°ì—´ ê¸°í˜¸ë¥¼ ì´ìš©í•´ ë°°ì—´ì˜ ìš”ì†Œì— ì ‘ê·¼ 
 	
-	return (sum/length);                            // Æò±Õ ¹ÝÈ¯ 
+	return (sum/length);                            // í‰ê·  ë°˜í™˜ 
 }
 
 double average_by_pointer(int *p, int length){
@@ -31,9 +31,7 @@ double average_by_pointer(int *p, int length){
 	double sum=0.0;
 	
 	for (i=0; i < length; i++)
-		sum+=*(p+i);                                // Æ÷ÀÎÅÍ »ê¼ú ¿¬»êÀ» ÀÌ¿ëÇØ ¹è¿­ÀÇ ¿ä¼Ò¿¡ Á¢±Ù 
+		sum+=*(p+i);                                // í¬ì¸í„° ì‚°ìˆ  ì—°ì‚°ì„ ì´ìš©í•´ ë°°ì—´ì˜ ìš”ì†Œì— ì ‘ê·¼ 
 	
-	
-	return (sum/length);                            // Æò±Õ ¹ÝÈ¯ 
+	return (sum/length);                            // í‰ê·  ë°˜í™˜ 
 } 
-
