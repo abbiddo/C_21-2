@@ -13,7 +13,7 @@ int main() {
 	q=&p;                       // q에 p주소값 대입 
 	
 	scanf("%d",p);              // &*p == p
-	printf("%d\n",*p);			// *p == num 
+	printf("%d\n",**q);			// *p == num 
 	scanf("%d",*q);             // **&q == *q
-	printf("%d\n",**q); 	    // **q == num
+	printf("%d\n",*p); 	    // **q == num
 }
