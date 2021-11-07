@@ -15,5 +15,5 @@ int main() {
 	scanf("%d",p);              // &*p == p
 	printf("%d\n",*p);			// *p == num 
 	scanf("%d",*q);             // **&q == *q
-	printf("%d\n",**q); 		// **q == num
+	printf("%d\n",**q); 	    // **q == num
 }
