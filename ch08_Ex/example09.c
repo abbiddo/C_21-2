@@ -1,15 +1,15 @@
 /**
-ÇÁ·Î±×·¥¸í : example09.c
-¼³¸í : 5°³ÀÇ ¼ýÀÚ¸¦ ÀÔ·Â ¹Þ°í, ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÏ¿© Ãâ·ÂÇÏ±â 
-ÀÛ¼ºÀÏ½Ã : 2021.11.07
-ÀÛ¼ºÀÚ : Á¤¼Ò¿µ
+í”„ë¡œê·¸ëž¨ëª… : example09.c
+ì„¤ëª… : 5ê°œì˜ ìˆ«ìžë¥¼ ìž…ë ¥ ë°›ê³ , ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ì—¬ ì¶œë ¥í•˜ê¸° 
+ìž‘ì„±ì¼ì‹œ : 2021.11.07
+ìž‘ì„±ìž : ì •ì†Œì˜
 **/
 
 #include <stdio.h>
 int main(){
 	int num[5],i,j,temp;
 	int cnt=sizeof(num)/sizeof(num[0]);
-	printf("5°³ÀÇ Á¤¼ö ÀÔ·Â : ");
+	printf("5ê°œì˜ ì •ìˆ˜ ìž…ë ¥ : ");
 	
 	for (i=0;i<cnt;i++)
 		scanf("%d",&num[i]); 
@@ -24,9 +24,9 @@ int main(){
 			
 	for (i=0;i<cnt;i++) printf("%d ",num[i]);
 }
-
+ 
 /**
-½ÇÇà °á°ú
-4 2 5 3 1   #ÀÔ·Â 
-1 2 3 4 5   #Ãâ·Â 
+ì‹¤í–‰ ê²°ê³¼
+4 2 5 3 1   #ìž…ë ¥ 
+1 2 3 4 5   #ì¶œë ¥ 
 **/ 
