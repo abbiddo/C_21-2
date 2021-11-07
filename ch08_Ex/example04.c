@@ -23,7 +23,7 @@ int main()
 	
 	printf("%d\n", decimal);
 }
-
+ 
 /**
 실행 결과
 13
