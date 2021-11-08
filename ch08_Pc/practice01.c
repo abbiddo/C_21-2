@@ -8,12 +8,12 @@
 #include <stdio.h>
 int main() {
 	int num;
-	int *p, **q;                // *p **q 선언 
+	int *p, **q;                // *p, **q 선언 
 	p=&num;                     // p에 num주소값 대입 
 	q=&p;                       // q에 p주소값 대입 
 	
-	scanf("%d",p);              // &*p == p
-	printf("%d\n",**q);			// *p == num 
-	scanf("%d",*q);             // **&q == *q
-	printf("%d\n",*p); 	    // **q == num
+	*p=5;                       // *p == num
+	printf("%d\n",**q);			// **q == num 
+	**q=10;             		// **q == num
+	printf("%d\n",*p); 	     	// *p == num
 }
