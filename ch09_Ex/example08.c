@@ -21,5 +21,5 @@ int main(){
 
 /**
 실행 결과
-0
-**/ 
+C Language
+**/
