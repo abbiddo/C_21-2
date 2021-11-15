@@ -18,8 +18,7 @@ int main(){
 	printf("이름을 입력하시오 : ");
 	scanf("%s",first_name);                // first_name 입력 
 	
-	strcpy(full_name,"");                  // full_name 문자 배열을 빈 문자열로 복사 
-	strcat(full_name,last_name);           // full_name + last_name => full_name
+	strcpy(full_name,last_name);           // full_name에 last_name copy
 	strcat(full_name," ");                 // full_name + " " => full_name
 	strcat(full_name,first_name);          // full_name + first_name => full_name
 	
