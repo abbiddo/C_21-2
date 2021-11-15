@@ -11,20 +11,25 @@ int my_strcmp(const char *str1, const char *str2);       // 함수 선언
 int main(){
 	char word1[30];
 	char word2[30];
+	int num=10;
 	
 	while(1){
 		printf("문자열 입력 : ");                        
 		scanf("%s",word1);
 		
-		if (word1[0] == 'q' && word1[1] == 'u' && word1[2] == 'i' && word1[3] == 't' && word1[4] == '\0') break;
-		// quit이 입력되면 반복문 종료 
-		
+		num=my_strcmp(word1,"quit");                         // 입력된 문자열과 "quit" 비교 
+		if (num==0) break;                                   // 반환값이 0이면 반복문 종료 
+																			
 		printf("문자열 입력 : ");                        
 		scanf("%s",word2);
 		
-		if (word2[0] == 'q' && word2[1] == 'u' && word2[2] == 'i' && word2[3] == 't' && word2[4] == '\0') break;
+		num=my_strcmp(word2,"quit");                         // 입력된 문자열과 "quit" 비교 
+		if (num==0) break;                                   // 반환값이 0이면 반복문 종료 
 		
-		my_strcmp(word1,word2);                          // 함수 호출 
+		num=my_strcmp(word1,word2);                          // 함수 호출 
+		
+		if (num==-1) printf("%s\n",word2);                   // 반환값이 -1이면 word2의 문자열이 크므로 word2 출력 
+		else printf("%s\n",word1);                           // 아니면 word1 출력 
 	}
 	
 	printf("프로그램 종료");
@@ -41,13 +46,11 @@ int my_strcmp(const char *str1, const char *str2){
 		
 		else if (str1[i]>str2[i]){                       // str1의 i번째 값이 str2의 i번째 값보다 더 크면 
 			result=1;									 // result를 1로 저장하고 str1을 str에 저장 후 반복문 종료 
-			printf("%s\n",str1);
 			break;
 		}
 		
 		else{											 // str2의 i번째 값이 str1의 i번째 값보다 더 크면 
 			result=-1;									 // result를 -1로 저장하고 str2을 str에 저장 후 반복문 종료 
-			printf("%s\n",str2);
 			break;
 		}
 	}
